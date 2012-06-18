@@ -1,31 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<widget>
-	<ThumbIcon itemtype="string"></ThumbIcon>
-	<BigThumbIcon itemtype="string"></BigThumbIcon>
-	<ListIcon itemtype="string"></ListIcon>
-	<BigListIcon itemtype="string"></BigListIcon>
-	<category itemtype="string"></category>
-	<type itemtype="string">user</type>
-	<cpname itemtype="string"></cpname>
-	<cplogo itemtype="string"></cplogo>
-	<cpauthjs itemtype="string"></cpauthjs>
-	<ver itemtype="string"></ver>
-	<mgver itemtype="string"></mgver>
-	<fullwidget itemtype="boolean">y</fullwidget>
-	<srcctl itemtype="boolean">y</srcctl>
-	<ticker itemtype="boolean">n</ticker>
-	<childlock itemtype="boolean">n</childlock>
-	<audiomute itemtype="boolean">n</audiomute>
-	<videomute itemtype="boolean">n</videomute>
-	<dcont itemtype="string">y</dcont>
-	<widgetname itemtype="string">DefaultJSScriptPrj</widgetname>
-	<description itemtype="string">Verizon DEMO</description>
-	<width itemtype="number">960</width>
-	<height itemtype="number">540</height>
-	<author itemtype="group">
-		<name itemtype="string">Cihan Sahin</name>
-		<email itemtype="string"></email>
-		<link itemtype="string"></link>
-		<organization itemtype="string"></organization>
-	</author>
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.conductor.cisco"
+        versionCode="10" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Splash Screen</name>
+
+    <description>
+        Conductor use cases 
+    </description>
+
+    <author href="https://build.phonegap.com" email="sahin.cihan@gmail.com">
+        Cihan Sahin
+    </author>
+
 </widget>
