@@ -1,1 +1,44 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>demo</title>
+		
+		<script type='text/javascript' language='javascript' >
+		    // this script must be located before including jabberwerx.js
+			jabberwerx_config = {
+				persistDuration: 30,
+				//if enabledMechanisms is plain, unsecureAllowed must be true
+				unsecureAllowed: true,   //default value : false
+				capabilityFeatures: ['http://jabber.org/protocol/caps',
+                         'http://jabber.org/protocol/chatstates',
+                         'http://jabber.org/protocol/disco#info',
+                         'http://jabber.org/protocol/muc',
+                         'http://jabber.org/protocol/muc#user'],
+				capabilityIdentity: {
+						category: 'client',
+						type: 'pc',
+						name: 'JabberWerx AJAX',
+						node: 'http://jabber.cisco.com/jabberwerx'},
+				baseReconnectCountdown: 30,
+				enabledMechanisms: ["PLAIN"]  //default value is: ["DIGEST-MD5", "PLAIN"]
+			};
+		</script>
+		<script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/jabberwerx.min.js"></script>
+	    <script language="javascript" type="text/javascript" src="js/main.js"></script>		
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+	</head>
+
+	<body onload="Main.onLoad();" onunload="Main.onUnload();">
+	
+	<div id='title'>Welcome to Conductor demo!</div>
+	<div style="position: absolute;top: 20%; width:100%">
+	<table width="100%" align="center" ><tr align="center" ><td align="center" >
+	<div id='imageDiv' style="position: relative; top: 160px;" ></div></td></tr></table></div>
+	<div id="infoArea">
+	<div id="slider" style="position: relative;"><div>
+	</div>
+    <!-- Dummy anchor as focus for key events -->
+	</body>
+</html>
